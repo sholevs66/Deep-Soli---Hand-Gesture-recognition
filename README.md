@@ -15,7 +15,7 @@ A preprocessing script **'data_pp_tools.load_data()'** loads and parse the data.
 The preprocessing script truncates the data points to equal length of 40 (as the authors mention in their paper). 33 & 23 sequences are droped from the training & validation sets respectivly as they have less than 40 samples.
 
 ## Parameters
-Basic parameters can bee seen at the bottom of **'trian.py'** packed by parser.
+Basic parameters can bee seen at the bottom of **'train.py'** packed by parser.
 
 ## Training
 **'train.py'** will load and process the data as described above, and train a CNN-LSTM model.
