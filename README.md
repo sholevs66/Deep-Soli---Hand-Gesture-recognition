@@ -5,6 +5,6 @@ Implementation of Deep Soli paper:
 
 
 
-# Data loading and preprocessing
+## Data loading and preprocessing
 Data and train/validation split configuration was taken from paper's author github: https://github.com/simonwsw/deep-soli
 After extracting the data, 
