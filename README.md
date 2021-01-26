@@ -1,8 +1,7 @@
 # Deep-Soli---Hand-Gesture-recognition
-Implementation of Deep Soli paper: 
-
+This is a Pytorch implementation of Deep Soli paper: 
 "S. Wang, J. Song, J. Lien, I. Poupyrev and O. Hilliges, "Interacting with soli: Exploring fine-grained dynamic gesture recognition in the radio-frequency spectrum", Proc. 29th ACM Annu. Symp. User Interface Softw. Technol., pp. 851-860, 2016."
-
+The original authors github is a bit complicated and uses many different packeges. This project is a simple implementation which allows parsing the radar data and training a CNN-LSTM neural network for hand gesture classification. 
 
 
 ## Data loading and preprocessing
