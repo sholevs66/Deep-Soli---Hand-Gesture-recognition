@@ -113,22 +113,6 @@ def main(args):
         torch.save(torch.stack(loss_arr_vld), 'validation_nll.pt')
 
 
-
-
-'''
-plt.figure()
-plt.imshow(data_train[100][0])
-plt.figure()
-plt.imshow(data_train[100][-1])
-
-plt.figure()
-plt.imshow(data_train[800][0])
-plt.figure()
-plt.imshow(data_train[800][-1])
-'''
-a=2
-
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='provide arguments')
 
