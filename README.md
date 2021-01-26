@@ -24,6 +24,6 @@ Predictions are calculated based only on the last hidden LSTM state. Training is
 `python train.py`
 
 ## Logging
-For each run, a folder named by date and time will be created with a log file containing info about the parameters. Losses arrays, accuracy arrays and figures are saved there as well.
+For each run, a folder named by date and time will be created with a log file containing info about the parameters. Losses arrays, accuracy arrays, figures and the trained model are saved there as well.
 
 ![Alt text](acc_epochs.png?raw=true "Title")
