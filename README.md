@@ -9,17 +9,17 @@ The original authors github is a bit complicated and uses many different packege
 ## Data loading and preprocessing
 Data and train/validation split configuration was taken from paper's author github: https://github.com/simonwsw/deep-soli
 After downloading the data, extract is (as defualt) to \dsp folder.
-A preprocessing script 'data_pp_tools.load_data()' loads and parse the data. The data is splite roughly 50/50 to train/validation by the same configuration file from the original authors. Each data point is a sequence of variable length of 1024 dimensional vector which are reshaped to a [32,32] 2d Doppler map [range, velocity]. 
+A preprocessing script **'data_pp_tools.load_data()'** loads and parse the data. The data is splite roughly 50/50 to train/validation by the same configuration file from the original authors. Each data point is a sequence of variable length of 1024 dimensional vector which are reshaped to a [32,32] 2d Doppler map [range, velocity]. 
 ![Alt text](2d_sample.png?raw=true "Title")
 
 The preprocessing script truncates the data points to equal length of 40 (as the authors mention in their paper). 33 & 23 sequences are droped from the training & validation sets respectivly as they have less than 40 samples.
 
 ## Parameters
-Basic parameters can bee seen at the bottom of 'trian.py' packed by parser.
+Basic parameters can bee seen at the bottom of **'trian.py'** packed by parser.
 
 ## Training
-'train.py' will load and process the data as described above, and train a CNN-LSTM model.
-Predictions are calculated based only on the last hidden LSTM state. Training is done using Negative log loss using true labels. Run command for training:
+**'train.py'** will load and process the data as described above, and train a CNN-LSTM model.
+Predictions are calculated based only on the last hidden LSTM state. Training is done using Negative log loss using true labels. Run command for training with default configurations:
 
 `python train.py`
 
