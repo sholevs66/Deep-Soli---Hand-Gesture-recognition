@@ -17,6 +17,8 @@ The preprocessing script truncates the data points to equal length of 40 (as the
 ## Training
 'train.py' will load and process the data as described above, and train a CNN-LSTM model.
 Predictions are calculated based only on the last hidden LSTM state. Training is done using Negative log loss using true labels.
+`python train.py`
+
 
 ## Logging
 For each run, a folder named by date and time will be created with a log file containing info about the parameters. Losses arrays, accuracy arrays and figures are saved there as well.
