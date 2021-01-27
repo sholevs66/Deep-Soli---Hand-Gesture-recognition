@@ -7,7 +7,7 @@ The original authors github is a bit complicated and uses many different packege
 
 
 ## Data loading and preprocessing
-Data and train/validation split configuration was taken from paper's author github: https://github.com/simonwsw/deep-soli
+Data and train/validation split configuration were taken from paper's author github: https://github.com/simonwsw/deep-soli
 After downloading the data, extract is (as defualt) to **\dsp** folder.
 A preprocessing script **'data_pp_tools.load_data()'** loads and parse the data. The data is splite roughly 50/50 to train/validation by the same configuration file from the original authors. Each data point is a sequence of variable length of 1024 dimensional vector which are reshaped to a [32,32] 2d Doppler map [range, velocity]. 
 ![Alt text](2d_sample.png?raw=true "Title")
